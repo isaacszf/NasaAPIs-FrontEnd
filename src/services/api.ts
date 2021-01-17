@@ -1,7 +1,5 @@
 import Axios from 'axios';
 
-const axios = Axios.create({
-  baseURL: 'https://epic.gsfc.nasa.gov/'
-});
+const axios = Axios.create();
 
 export default axios;

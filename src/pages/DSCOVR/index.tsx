@@ -38,14 +38,16 @@ interface PlanetProps {
   };
 }
 
-const Landing: React.FC = () => {
+const DSCOVR: React.FC = () => {
   const [planets, setPlanets] = useState<PlanetProps[]>([]);
 
   useEffect(() => {
-    api.get('api/natural').then((response) => setPlanets(response.data));
+    api
+      .get('https://epic.gsfc.nasa.gov/api/natural')
+      .then((response) => setPlanets(response.data));
   }, []);
 
-  const formattedDay = ((format(new Date(), 'dd') as unknown) as number) - 2;
+  const formattedDay = ((format(new Date(), 'dd') as unknown) as number) - 1;
   const formattedMonth = format(new Date(), 'MM');
   const recentYear = getYear(new Date());
 
@@ -133,4 +135,4 @@ const Landing: React.FC = () => {
   );
 };
 
-export default Landing;
+export default DSCOVR;

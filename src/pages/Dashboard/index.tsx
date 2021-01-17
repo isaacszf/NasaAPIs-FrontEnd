@@ -1,7 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { FiLogIn } from 'react-icons/fi';
 
 import { Container, Links } from './styles';
+
+import Card from '../../components/Card';
 
 const Dashboard: React.FC = () => {
   return (
@@ -10,7 +13,12 @@ const Dashboard: React.FC = () => {
       <h3>Select your API</h3>
 
       <Links>
-        <Link to="/dscovr">DSCOVR API</Link>
+        <Card cardTitle="DSCOVR API">
+          <Link to="/dscovr">
+            <FiLogIn className="redirect-icon" size={24} />
+            Go to API
+          </Link>
+        </Card>
       </Links>
     </Container>
   );

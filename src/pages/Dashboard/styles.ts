@@ -69,24 +69,4 @@ export const Links = styled.div`
   display: flex;
   
   animation: ${appearFromLeft} 1.5s;
-
-  a {
-    margin-top: 30px;
-
-    padding: 20px;
-
-    background: #32337d;
-    color: #fff;
-
-    border: 0;
-    border-radius: 15px;
-
-    text-decoration: none;
-
-    transition: background 400ms;
-
-    &:hover {
-      background: ${shade(0.15, '#32337d')}
-    }
-  }
 `;
