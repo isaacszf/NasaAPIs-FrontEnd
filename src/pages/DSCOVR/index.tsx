@@ -56,17 +56,12 @@ const DSCOVR: React.FC = () => {
       <Header headerTitle="This image was taken by NASA's EPIC camera onboard the NOAA DSCOVR spacecraft" />
 
       {planets.map((planet) => {
+        const planetImageUrl = `https://epic.gsfc.nasa.gov/archive/natural/${recentYear}/${formattedMonth}/${formattedDay}/png/${planet.image}.png`;
+
         return (
           <PlanetContainer key={planet.identifier}>
-            <a
-              href={`https://epic.gsfc.nasa.gov/archive/natural/${recentYear}/${formattedMonth}/${formattedDay}/png/${planet.image}.png`}
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img
-                src={`https://epic.gsfc.nasa.gov/archive/natural/${recentYear}/${formattedMonth}/${formattedDay}/png/${planet.image}.png`}
-                alt="Planet"
-              />
+            <a href={planetImageUrl} target="_blank" rel="noreferrer">
+              <img src={planetImageUrl} alt="." />
             </a>
 
             <div>

@@ -3,7 +3,6 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
 import Dashboard from '../pages/Dashboard';
 import DSCOVR from '../pages/DSCOVR';
-import InSightMars from '../pages/InSightMars';
 
 const Routes: React.FC = () => {
   return (
@@ -11,7 +10,6 @@ const Routes: React.FC = () => {
       <Switch>
         <Route component={Dashboard} path="/" exact />
         <Route component={DSCOVR} path="/dscovr" />
-        <Route component={InSightMars} path="/insightmars" />
       </Switch>
     </BrowserRouter>
   );
