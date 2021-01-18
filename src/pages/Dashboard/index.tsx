@@ -20,8 +20,8 @@ const Dashboard: React.FC = () => {
           </Link>
         </Card>
 
-        <Card cardTitle="InSight Mars API">
-          <Link to="/insightmars">
+        <Card cardTitle="APOD API">
+          <Link to="/apod">
             <FiLogIn className="redirect-icon" size={24} />
             Go to API
           </Link>

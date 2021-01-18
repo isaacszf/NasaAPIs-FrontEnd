@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { FiPlusSquare } from 'react-icons/fi';
 
-import { getYear, format } from 'date-fns';
-
 import { Container, PlanetContainer } from './styles';
 
 import Header from '../../components/Header';
@@ -12,7 +10,7 @@ import api from '../../services/api';
 interface PlanetProps {
   identifier: string;
   image: string;
-  date: Date;
+  date: string;
 
   centroid_coordinates: {
     lat: number;
@@ -47,16 +45,16 @@ const DSCOVR: React.FC = () => {
       .then((response) => setPlanets(response.data));
   }, []);
 
-  const formattedDay = ((format(new Date(), 'dd') as unknown) as number) - 1;
-  const formattedMonth = format(new Date(), 'MM');
-  const recentYear = getYear(new Date());
-
   return (
     <Container>
       <Header headerTitle="This image was taken by NASA's EPIC camera onboard the NOAA DSCOVR spacecraft" />
 
       {planets.map((planet) => {
-        const planetImageUrl = `https://epic.gsfc.nasa.gov/archive/natural/${recentYear}/${formattedMonth}/${formattedDay}/png/${planet.image}.png`;
+        const formattedDay = planet.date.slice(8, 10);
+        const formattedMonth = planet.date.slice(5, 7);
+        const formattedYear = planet.date.slice(0, 4);
+
+        const planetImageUrl = `https://epic.gsfc.nasa.gov/archive/natural/${formattedYear}/${formattedMonth}/${formattedDay}/png/${planet.image}.png`;
 
         return (
           <PlanetContainer key={planet.identifier}>
