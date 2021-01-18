@@ -14,5 +14,9 @@ export default createGlobalStyle`
 
   body {
     background: #1c1c1c;
+
+    @media (max-width: 1024px) {
+      background: linear-gradient(to left, #1a1a66, #101052);
+    }
   }
 `;

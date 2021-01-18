@@ -1,5 +1,4 @@
 import styled, { keyframes } from 'styled-components';
-import { shade } from 'polished';
 
 import solarSystemBackground from '../../assets/images/solar-system-minimal-blue.jpg';
 
@@ -63,10 +62,19 @@ export const Container = styled.div`
     margin: 15px auto;
     text-align: center;
   }
+
+  @media (max-width: 1024px) {
+    background-size: 0;
+  }
 `;
 
 export const Links = styled.div`
   display: flex;
   
   animation: ${appearFromLeft} 1.5s;
+
+  @media (max-width: 1024px) {
+    display: flex;
+    flex-direction: column;
+  }
 `;
