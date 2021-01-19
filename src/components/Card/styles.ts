@@ -1,24 +1,24 @@
 import styled from 'styled-components';
-import { lighten } from 'polished';
 
-export const Container = styled.div`
+export const Container = styled.div`  
   display: flex;
   flex-direction: column;
 
   padding: 20px;
   padding-bottom: 60px;
-  
-  margin: 35px;
-
-  border-radius: 15px;
-
-  transition: box-shadow 550ms;
-
-  &:hover {
-    box-shadow: ${lighten(0.25, '#1a1a66')} 1px 1px 16px;
-  }
 
   background: linear-gradient(to right, #1a1a66, #101052);
+  border-radius: 15px;
+
+  margin: 35px;
+
+  transform: rotateZ(180deg);
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+
+  &:hover {
+    transform: rotateZ(0deg);
+  }
 
   img {
     width: 250px;
@@ -33,7 +33,7 @@ export const Container = styled.div`
     margin-bottom: 20px;
     margin-top: 15px;
   }
-
+  
   a {
     text-decoration: none;
 
@@ -57,5 +57,5 @@ export const Container = styled.div`
     &.redirect-icon {
       margin-right: 15px;
     }
-  }
+  } 
 `;
