@@ -1,4 +1,5 @@
 import React from 'react';
+import 'pure-react-carousel/dist/react-carousel.es.css';
 
 import GlobalStyles from './styles/GlobalStyles';
 

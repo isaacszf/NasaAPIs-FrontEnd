@@ -26,6 +26,13 @@ const Dashboard: React.FC = () => {
             Go to API
           </Link>
         </Card>
+
+        <Card cardTitle="Mars Rover Photos API">
+          <Link to="/marsrover">
+            <FiLogIn className="redirect-icon" size={24} />
+            Go to API
+          </Link>
+        </Card>
       </Links>
     </Container>
   );
