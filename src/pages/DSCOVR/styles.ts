@@ -14,7 +14,6 @@ const appearFromTop = keyframes`
   }
 `;
 
-
 export const Container = styled.div`
   background: url(${solarSystemBackground}) no-repeat;
 

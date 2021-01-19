@@ -59,7 +59,7 @@ const DSCOVR: React.FC = () => {
         return (
           <PlanetContainer key={planet.identifier}>
             <a href={planetImageUrl} target="_blank" rel="noreferrer">
-              <img src={planetImageUrl} alt="." />
+              <img src={planetImageUrl} alt="Planet" />
             </a>
 
             <div>

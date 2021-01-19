@@ -29,4 +29,11 @@ export const Container = styled.header`
       color: ${shade(2, '#eee')};
     }
   }
+
+  @media (max-width: 1024px) {
+    svg {
+      width: 16px;
+      height: 16px;
+    }
+  }
 `;
