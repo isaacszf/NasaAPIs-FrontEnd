@@ -49,6 +49,7 @@ export const Container = styled.div`
   background: url(${solarSystemBackground}) no-repeat 78%;
 
   animation: ${appearBackgroundImage} 1s;
+  
   h1 {
     animation: ${appearFromTop} 1.4s;
     text-align: center;

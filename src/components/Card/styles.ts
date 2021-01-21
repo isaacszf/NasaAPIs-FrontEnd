@@ -1,4 +1,16 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
+
+const appearGoToAPI = keyframes`
+  0% {
+    opacity: 0;
+  } 
+  50% {
+    opacity: 0.5;
+  } 
+  100% {
+    opacity: 1;
+  }
+`;
 
 export const Container = styled.div`  
   display: flex;
@@ -18,6 +30,14 @@ export const Container = styled.div`
 
   &:hover {
     transform: rotateZ(0deg);
+
+    p {
+      animation: ${appearGoToAPI} 8s infinite;
+    }
+  }
+
+  p {
+    opacity: 0;
   }
 
   img {
