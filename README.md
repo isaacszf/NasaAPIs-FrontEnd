@@ -1,7 +1,7 @@
 # nasa-apis
 
 <div align="center">
-  <img src=".github/nasa-apis-logo.png" height="325" alt="Logo" />
+  <img src=".github/nasa-apis-logo.png" height="200" alt="Logo" />
 </div>
 
 # Sobre o Projeto
