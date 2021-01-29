@@ -45,7 +45,8 @@ const APOD: React.FC = () => {
           </p>
 
           <p className="copyright">
-            <strong>Image Credits:</strong> {picture?.copyright}
+            <strong>Image Credits:</strong>{' '}
+            {picture?.copyright ? picture?.copyright : 'Unknown Author'}
           </p>
 
           <a href={picture?.hdurl} target="_blank" rel="noreferrer">
