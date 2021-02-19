@@ -18,10 +18,10 @@ APIs used:
 
 Videos demonstrating how the application works:
 
-- [Parte 1](https://www.youtube.com/watch?v=iMiQhMhATUw&t=4s)
-- [Parte 2](https://www.youtube.com/watch?v=9LFeoPtH0as&t=12s)
-- [Parte 3](https://www.youtube.com/watch?v=KyLKs83Qw-c)
-- [Parte 4](https://www.youtube.com/watch?v=8b1kvCtv6pA&t=186s)
+- [Part 1](https://www.youtube.com/watch?v=iMiQhMhATUw&t=4s)
+- [Part 2](https://www.youtube.com/watch?v=9LFeoPtH0as&t=12s)
+- [Part 3](https://www.youtube.com/watch?v=KyLKs83Qw-c)
+- [Part 4](https://www.youtube.com/watch?v=8b1kvCtv6pA&t=186s)
 
 ## 🔨 Technologies 🔨
 
