@@ -14,15 +14,6 @@ APIs used:
 - [Astronomy Picture of the Day](https://github.com/nasa/apod-api)
 - [Mars Rover Photos](https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1000&api_key=DEMO_KEY)
 
-## Functioning 
-
-Videos demonstrating how the application works:
-
-- [Part 1](https://www.youtube.com/watch?v=iMiQhMhATUw&t=4s)
-- [Part 2](https://www.youtube.com/watch?v=9LFeoPtH0as&t=12s)
-- [Part 3](https://www.youtube.com/watch?v=KyLKs83Qw-c)
-- [Part 4](https://www.youtube.com/watch?v=8b1kvCtv6pA&t=186s)
-
 ## 🔨 Technologies 🔨
 
 - [ReactJS](https://reactjs.org/)
